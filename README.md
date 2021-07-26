@@ -1,6 +1,26 @@
 ```
 https://docs.timescale.com/latest/getting-started/installation/rhel-centos/installation-yum
 
+---
+Docs -> 
+
+sudo pg_ctlcluster 13 main status
+
+sudo -u postgres psql
+
+ALter USER postgres PASSWORD 'postgres';
+CREATE database tutorial
+\c tutorial
+
+-- Extend the database with TimescaleDB
+CREATE EXTENSION IF NOT EXISTS timescaledb;
+
+
+required config change
+
+reload
+
+---
 
 // All Servers
 
